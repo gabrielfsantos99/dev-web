@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+        <style>
+            body{
+                background-image: url("../static/img/fundo2.png");
+            }
+        </style>
+    </head>
+    <link rel="stylesheet" href="/html/css/style.css">
+    <link rel="stylesheet" href="/html/css/normalize.css">
+    <body id="bodyhome">
+
+            <!--Topo-->
+    <div class="grid-container">
+        <div>
+            <img src="../static/img/logo.png" style="padding-top: 25px;">
+        </div>
+        <div>
+            <nobr><p style="padding-top: 45px;text-align: end;margin-left: 490px;">
+                <a href="/">Home</a> | 
+                <a href="/quem-somos/">Quem somos</a> | 
+                <a href="/contato/">Contato</a></p></nobr>
+        </div>
+    </div>
+
+
+{% block conteudo %}
+{% endblock %}
+        
+        <!--Rodapé-->
+        <div>
+            <p class="texto-footer">Todos os Direitos Reservados</p>
+        </div>
+    </body>
+</html>

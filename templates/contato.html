@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<body>
+    <!-- <header class="navegacao">
+        <img  src="/html/img/logo.png" alt="Logo">
+        <nav>
+            <a href="home.html">Home |</a>
+            <a href="quem-somos.html">Quem Somos |</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header> -->
+    <main class="principal">
+        <div class="principal-cima">
+            <h1>Entre em contato</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, id non?</p>
+            <hr>
+        </div>
+        <div class="principal-baixo">
+            <form>
+                Seu email:<br>
+                <input type="text" name="email"> <br>
+                Assunto:<br>
+                <input type="text" name="assunto"> <br>
+                Descrição:<br>
+                <input class="input-descricao" type="text" name="descrição"> <br>
+                <input class="input-enviar" type="submit" value="Enviar" >
+            </form>
+        </div>
+    </main>
+    <!-- <footer>
+        <p class="texto-footer">Todos os Direitos Reservados</p>
+    </footer> -->
+</body>
+{% endblock %}
+</html>
